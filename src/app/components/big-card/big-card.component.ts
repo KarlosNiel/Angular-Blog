@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 
@@ -10,5 +10,13 @@ import { ButtonModule } from 'primeng/button';
   styleUrl: './big-card.component.css'
 })
 export class BigCardComponent {
+  @Input()
+  photoCover:string = '';
+  @Input()
+  cardTitle:string = '';
+  @Input()
+  cardDescription:string = '';
+  @Input()
+  Id:string = '0';
 
 }
