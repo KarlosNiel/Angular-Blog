@@ -1,25 +1,21 @@
 <div class="container mx-auto pt-6 pb-3">
-  <p-toolbar [styleClass]="'!border-none !rounded-none !shadow-none !bg-transparent'">
+  <p-menubar [model]="items" [styleClass]="'!border-none !rounded-none !shadow-none !bg-transparent'">
     <ng-template #start>
-      <div class="flex items-center gap-8">
-        <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" [styleClass]="'!w-8 !h-8'"></p-avatar>
+      <p-avatar [styleClass]="'!border-none !bg-transparent'">
+        <img src="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" alt="Logo">
+      </p-avatar>
+    </ng-template>
 
-        <a href="#" class="text-gray-300 hover:text-white duration-300">LEARN</a>
-        <a href="#" class="text-gray-300 hover:text-white duration-300">BLOG</a>
-        <a href="#" class="text-gray-300 hover:text-white duration-300">BOOKMARKS</a>
-        <a href="#" class="text-gray-300 hover:text-white duration-300">UI KIT</a>
-      </div>
+    <ng-template #item let-item let-root="root">
+      <span class="px-3"> {{ item.label }}</span>
     </ng-template>
 
     <ng-template #end>
       <div class="flex items-center gap-6">
-        <a href="#" class="pi pi-github text-gray-300 hover:text-white duration-300"></a>
-        <a href="#" class="pi pi-linkedin text-gray-300 hover:text-white duration-300"></a>
-        <a href="#" class="pi pi-instagram text-gray-300 hover:text-white duration-300"></a>
+        <i class="pi pi-github"></i>
+        <i class="pi pi-linkedin"></i>
+        <i class="pi pi-instagram"></i>
       </div>
-
-      <!-- <p-button icon="pi pi-bars" [styleClass]="'!ml-auto !hidden-md !text-gray-300 !text-2xl'" (click)="menuAberto = !menuAberto"></p-button> -->
-
     </ng-template>
-  </p-toolbar>
+  </p-menubar>
 </div>

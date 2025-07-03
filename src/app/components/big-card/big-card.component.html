@@ -1,12 +1,13 @@
-<p-card [styleClass]="'w-140! border-none! bg-transparent! shadow-none! '">
+<p-card [styleClass]="'w-auto! border-none! bg-transparent! shadow-none! px-5! md:px-0!'">
   <ng-template #header>
-    <img class="h-75 w-auto" src="{{photoCover}}" alt="">
+    <img class="h-75 w-full max-w-xl" src="{{photoCover}}" alt="">
   </ng-template>
 
-  <ng-template #title> <h2 class="pt-3">{{cardTitle}}</h2> </ng-template>
+  <ng-template #title>
+    <h2 class="pt-3 max-w-xl w-full">{{cardTitle}}</h2>
+  </ng-template>
 
   <ng-template #content>
-    <p class="opacity-50"> {{cardDescription}} </p>
+    <p class="opacity-50 max-w-xl w-full break-words"> {{cardDescription}} </p>
   </ng-template>
 </p-card>
-
