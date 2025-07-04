@@ -1,10 +1,10 @@
-<p-card [styleClass]="'w-auto! border-none! bg-transparent! shadow-none! px-5! md:px-0!'">
+<p-card [routerLink]="['content', Id]" [styleClass]="'w-auto! border-none! bg-transparent! shadow-none! px-5! md:px-0! cursor-pointer! transition! duration-200! hover:-translate-y-2! hover:shadow-lg!'">
   <ng-template #header>
     <img class="h-75 w-full max-w-xl" src="{{photoCover}}" alt="">
   </ng-template>
 
   <ng-template #title>
-    <h2 class="pt-3 max-w-xl w-full">{{cardTitle}}</h2>
+    <h2  class="pt-3 max-w-xl w-full">{{cardTitle}}</h2>
   </ng-template>
 
   <ng-template #content>

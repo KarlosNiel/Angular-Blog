@@ -1,0 +1,16 @@
+<section class="mx-auto">
+  <app-divider/>
+
+  <div class="container mx-auto flex flex-col justify-center max-w-md">
+    <p-image src="{{ photoCover }}" alt="Image" [styleClass]="'w-full'" [preview]="true" />
+
+    <div class="text-center">
+      <h2 class="text-xl font-semibold"> {{ contentTitle }} </h2>
+      <p>{{ contentDescription }}</p>
+    </div>
+
+    <div class="mt-4 flex justify-center">
+      <p-button label="Back" [routerLink]="['/']" [styleClass]="'w-full! bg-white! border-none! hover:opacity-50! transition-opacity! duration-300!'" />
+    </div>
+  </div>
+</section>

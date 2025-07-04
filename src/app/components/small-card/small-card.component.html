@@ -1,4 +1,4 @@
-<p-card [styleClass]="'w-auto! border-none! bg-transparent! shadow-none! px-5! md:px-0!'">
+<p-card [routerLink]="['content', Id]" [styleClass]="'w-auto! border-none! bg-transparent! shadow-none! px-5! md:px-0! cursor-pointer! transition! duration-200! hover:-translate-y-2! hover:shadow-lg!'">
   <ng-template #content>
     <div class="flex flex-row gap-4 items-start">
       <img class="w-auto h-16 md:h-26" src="{{photoCover}}" alt="">
